@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,user-scalable=no">
+
+
+<meta name="format-detection" content="telephone=yes">
+<title>My Love</title>
+<style type="text/css">
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	font-size: 25px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	background: #003333;
+}
+
+div {
+	text-align: left;
+}
+
+.tittle {
+	width: 100%;
+	background: #003333;
+	top: 0px;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	position: fixed !important;
+	display: none;
+	cursor: pointer;
+}
+
+.big {
+	font-family: "微软雅黑";
+	color: #FFF;
+	font-size: 35px;
+}
+
+
+</style>
+
+<script type="text/javascript" src="./static/js/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(e) {
+	$(document).scrollTop(300); /*移动滚动条到最下方*/
+	//timer=setInterval("$.change()",6000);
+	//clearInterval(timer);
+	t=1;
+	$("#t-"+t).fadeIn();
+	
+	$(document).click(
+	function(){
+		$.change();
+		}
+	);
+	
+	/*切换*/
+	$.change=function(){
+		t++;
+		if(t<=$(".tittle").length){
+		$(".tittle").slideUp(1500).fadeOut();
+		$("#t-"+t).slideDown(1500).fadeIn();
+		}else{
+			localStorage["index"]="1";
+			window.location="love.html";
+			}
+		}
+});
+</script>
+
+</head>
+
+<body>
+	<center>
+		<div class="tittle" id="t-1" style="display: block;">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center"> <span class="big">Hellooo my love ❤️</span></td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="tittle" id="t-2" style="">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center"><span class="big">You are the light of my life and the love of my heart.</span></td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="tittle" id="t-3" style="">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center"><span class="big">I fall in love with you more every single day.</span></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</center>
+
+	<div class="tittle" id="t-4" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">You are the most beautiful person, both inside and out.</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-5" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">You make my heart skip a beat every time I see you.</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-6" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">I feel so lucky and blessed to have you in my life.</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-7" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">I can't imagine my life without you.</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-8" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">Your love makes everything in life worthwhile.</span></td>
+		
+			
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-9" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">I love you more than words can ever express.</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+
+
+
+</body></html>
